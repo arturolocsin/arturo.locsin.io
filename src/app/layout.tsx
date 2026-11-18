@@ -1,29 +1,33 @@
-import type { Metadata } from "next";
-import { Fraunces, Geist } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import "@fontsource-variable/inter";
+import "@fontsource/jetbrains-mono/400.css";
 
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
-  subsets: ["latin"],
-});
+import { person, siteUrl } from "./site";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://arturo.locsin.io"),
-  title: "Arturo Locsin",
-  description: "Arturo Locsin's personal site: works, thoughts, and writing.",
+  metadataBase: new URL(siteUrl),
+  title: person.name,
+  description: person.description,
+  alternates: { canonical: "/" },
   openGraph: {
-    title: "Arturo Locsin",
-    description: "Works, thoughts, and writing.",
-    url: "https://arturo.locsin.io",
-    siteName: "Arturo Locsin",
-    type: "website",
+    title: person.name,
+    description: person.description,
+    url: "/",
+    siteName: person.name,
+    type: "profile",
+    locale: "en_US",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: person.name,
+    description: person.description,
+  },
+};
+
+export const viewport: Viewport = {
+  colorScheme: "light",
+  themeColor: "#f8f7f3",
 };
 
 export default function RootLayout({
@@ -31,9 +35,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${fraunces.variable} antialiased`}>
-        {children}
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

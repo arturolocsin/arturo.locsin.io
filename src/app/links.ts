@@ -1,0 +1,36 @@
+export type IconName = "linkedin" | "facebook" | "instagram" | "projects";
+
+export type ProfileLink = {
+  label: string;
+  href: string;
+  icon: IconName;
+  /** Marks a profile of mine on another site (rel="me"). */
+  isProfile?: boolean;
+};
+
+/** Homepage links, in display order. Add, remove or reorder here. */
+export const links: ProfileLink[] = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/arturolocsin/",
+    icon: "linkedin",
+    isProfile: true,
+  },
+  {
+    label: "Facebook",
+    href: "https://www.facebook.com/arturo.locsin/",
+    icon: "facebook",
+    isProfile: true,
+  },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/r2roloxn/",
+    icon: "instagram",
+    isProfile: true,
+  },
+  {
+    label: "Projects",
+    href: "/projects",
+    icon: "projects",
+  },
+];

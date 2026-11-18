@@ -1,37 +1,63 @@
 @import "tailwindcss";
 
+/*
+ * Colours live here and only here. The site is light mode only.
+ */
 :root {
-  --background: #f4f1ea;
-  --foreground: #1a1c1a;
-  --muted: #6f726d;
-  --accent: #2f6b4f;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #111412;
-    --foreground: #eef0ec;
-    --muted: #9ca39d;
-    --accent: #7cc4a0;
-  }
+  --background: #f8f7f3; /* warm off-white */
+  --foreground: #182033; /* headings */
+  --muted: #3a4256; /* body copy */
+  --link: #1e6aa8; /* cerulean links */
+  --hover: #dcebf6; /* link hover background */
+  --line: #1e6aa8; /* photo ring */
+  --bold: #1e6aa8; /* top band and heading bar */
+  --dots: #1e6aa8; /* halftone texture */
+  --photo: #dcebf6; /* photo placeholder while loading */
+  color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
-  --color-accent: var(--accent);
-  --font-sans: var(--font-geist-sans);
-  --font-serif: var(--font-fraunces);
+  --color-link: var(--link);
+  --color-hover: var(--hover);
+  --color-line: var(--line);
+  --color-bold: var(--bold);
+  --color-photo: var(--photo);
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-sans);
 }
 
 ::selection {
-  background: var(--accent);
+  background: var(--link);
   color: var(--background);
 }
+
+/* Halftone dots: one mask image, tinted by --dots so it follows the colour mode. */
+.halftone {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(60%, 860px);
+  aspect-ratio: 1;
+  background-color: var(--dots);
+  opacity: 0.42;
+  -webkit-mask: url("/halftone.svg") top right / contain no-repeat;
+  mask: url("/halftone.svg") top right / contain no-repeat;
+  pointer-events: none;
+}
+
+@media (max-width: 640px) {
+  .halftone {
+    width: 78%;
+    opacity: 0.3;
+  }
+}
+

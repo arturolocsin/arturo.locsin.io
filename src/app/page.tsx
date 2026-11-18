@@ -64,11 +64,11 @@ export default function Home() {
               60 people. Now I’m building my own thing.
             </p>
             <p>
-              I play basketball any chance I get. A good night in means a pizza, a
-              cold drink, and a film I can get lost in. I also have a soft spot for
-              pretty much anything that takes me back to the ’90s. My favorite
-              moments are the ones when there’s nothing left on the calendar and I
-              can just hang out with my kids.
+              Outside work: I play basketball any chance I get. A relaxing night in
+              means a pizza, a cold drink, and a long film I can get lost in. I also
+              have a soft spot for nostalgia and pretty much anything that takes me
+              back to the ’90s. My favorite moments are when there’s nothing left on
+              the calendar and I can just hang out with my wife and kids.
             </p>
           </div>
 

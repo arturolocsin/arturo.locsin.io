@@ -22,6 +22,7 @@ npm run build
 - `src/app/globals.css` — every colour, in one place. The site is light mode only.
 - `public/halftone.svg` — the halftone dot texture (tinted by the `--dots` colour).
 - `public/arturo.jpg` — profile photo.
+- `public/arturo-locsin-cv.pdf` — the CV behind the "Download my CV" link. Replace this file to update it (and the size note in `src/app/links.ts`).
 - `src/app/projects/page.tsx` — placeholder Projects page.
 
 ## Deploying to the subdomain

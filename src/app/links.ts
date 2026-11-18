@@ -1,4 +1,4 @@
-export type IconName = "linkedin" | "facebook" | "instagram" | "projects";
+export type IconName = "linkedin" | "facebook" | "instagram" | "projects" | "download";
 
 export type ProfileLink = {
   label: string;
@@ -34,3 +34,11 @@ export const links: ProfileLink[] = [
     icon: "projects",
   },
 ];
+
+/** CV download, shown on its own line under the links. Replace the PDF in /public to update it. */
+export const cv = {
+  label: "Download my CV",
+  href: "/arturo-locsin-cv.pdf",
+  fileName: "Arturo-Locsin-CV.pdf",
+  note: "PDF · 160 KB",
+};

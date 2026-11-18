@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import { Icon } from "@/components/Icon";
 
-import { links } from "./links";
+import { cv, links } from "./links";
 import { person, siteUrl } from "./site";
 
 /** Structured data (schema.org Person) describing Arturo to search engines. */
@@ -88,6 +88,19 @@ export default function Home() {
               ))}
             </ul>
           </nav>
+
+          <div className="mt-8 flex flex-col items-start">
+            <span aria-hidden="true" className="mb-5 h-px w-10 bg-line" />
+            <a
+              href={cv.href}
+              download={cv.fileName}
+              className="-mx-2.5 inline-flex min-h-11 items-center gap-3 rounded-md px-2.5 text-[17px] font-medium text-link transition-colors hover:bg-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-link"
+            >
+              <Icon name="download" />
+              {cv.label}
+              <span className="font-mono text-[12px] font-normal text-muted">{cv.note}</span>
+            </a>
+          </div>
         </div>
       </main>
     </div>

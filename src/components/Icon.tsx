@@ -24,6 +24,13 @@ const paths: Record<IconName, React.ReactNode> = {
       <path d="M17.2 6.8v.01" />
     </>
   ),
+  download: (
+    <>
+      <path d="M12 4v11" />
+      <path d="m7 10 5 5 5-5" />
+      <path d="M5 20h14" />
+    </>
+  ),
   projects: (
     <>
       <rect x="3.5" y="3.5" width="7" height="7" rx="1.5" />

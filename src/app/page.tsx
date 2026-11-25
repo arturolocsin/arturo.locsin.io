@@ -58,8 +58,8 @@ export default function Home() {
 
           <div className="mt-5 flex flex-col gap-4 text-lg leading-[1.7] text-muted">
             <p>
-              I’ve been building software for over 20 years; from engineering, to
-              product management, to leading delivery teams. Most recently, I spent
+              I’ve been building and delivering software for over 20 years; from
+              engineering, to product management, to leading delivery teams. Most recently, I spent
               six years running a tech lab in Ho Chi Minh City that I grew from
               scratch to around 60 people at peak. Now I’m building my own thing.
             </p>

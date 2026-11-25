@@ -58,17 +58,17 @@ export default function Home() {
 
           <div className="mt-5 flex flex-col gap-4 text-lg leading-[1.7] text-muted">
             <p>
-              I’ve spent over 20 years working in software, from engineering and
-              product management to leading teams. Most recently, I spent six years
-              building and running a tech lab in Ho Chi Minh City that grew to around
-              60 people. Now I’m building my own thing.
+              I’ve been building software for over 20 years; from engineering, to
+              product management, to leading delivery teams. Most recently, I spent
+              six years running a tech lab in Ho Chi Minh City that I grew from
+              scratch to around 60 people at peak. Now I’m building my own thing.
             </p>
             <p>
-              Outside work: I play basketball any chance I get. A relaxing night in
-              means a pizza, a cold drink, and a long film I can get lost in. I also
-              have a soft spot for nostalgia and pretty much anything that takes me
-              back to the ’90s. My favorite moments are when there’s nothing left on
-              the calendar and I can just hang out with my wife and kids.
+              Outside work... I do basketball training any chance I get. I recharge
+              with a pizza, a cold drink, and a sci-fi or psychological thriller film.
+              I also have a soft spot for nostalgia and anything that takes me back
+              to the ’90s. And last but not least, I love hanging out and doing
+              everyday or random stuff with my wife and kids.
             </p>
           </div>
 

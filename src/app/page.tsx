@@ -68,7 +68,7 @@ export default function Home() {
               with a pizza, a cold drink, and a sci-fi or psychological thriller film.
               I also have a soft spot for nostalgia and anything that takes me back
               to the ’90s. And last but not least, I love hanging out and doing
-              everyday or random stuff with my wife and kids.
+              everyday or random stuff with the wife and kids.
             </p>
           </div>
 

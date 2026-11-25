@@ -64,11 +64,14 @@ export default function Home() {
               scratch to around 60 people at peak. Now I’m building my own thing.
             </p>
             <p>
-              Outside work... I do basketball training any chance I get. I recharge
-              with a pizza, a cold drink, and a sci-fi or psychological thriller film.
-              I also have a soft spot for nostalgia and anything that takes me back
-              to the ’90s. And last but not least, I love hanging out and doing
-              everyday or random stuff with the wife and kids.
+              Outside work... I enjoy tinkering with AI and building
+              small passion projects. I go to the gym and do basketball
+              training any chance I get to stay physically and mentally
+              fit. I recharge with a pizza, a cold drink, and a
+              sci-fi/mind-bender film. I also have a soft spot for
+              nostalgia and anything that takes me back to the ’90s. And
+              the best thing I love to do is simply hang out and make
+              new memories with the wife and kids.
             </p>
           </div>
 
